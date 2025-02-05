@@ -1,13 +1,17 @@
-import { useState } from "react";
-import { createContext } from "react";
-import React from "react";
-export const Context = createContext()
+import React, { useState } from 'react';
+import { createContext } from 'react';
 
-export const GlobalContext = ({children}) => {
-    const [token , setToken] = useState(JSON.parse(localStorage.getItem("token")) || null)
+export const Context = createContext();
 
-    localStorage.setItem("token" ,JSON.stringify(token))
-    return(
-        <Context.Provider value={{token,setToken}}>{children}</Context.Provider>
-    )
-}
+export const GlobalContext = ({ children }) => {
+  const [token, setToken] = useState(JSON.parse(localStorage.getItem('token')) || null);
+  const [hideMenu, setHideMenu] = useState(false);
+
+  localStorage.setItem('token', JSON.stringify(token));
+
+  return (
+    <Context.Provider value={{ token, setToken, hideMenu, setHideMenu }}>
+      {children}
+    </Context.Provider>
+  );
+};
