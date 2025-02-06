@@ -1,8 +1,204 @@
 {
-    "users":[
-        {
-            "username":"Valijon",
-            "password":"123"
-        }
+    "users": [
+      {
+        "username": "Valijon",
+        "password": "123"
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "path": "/",
+        "title": "Asosiy"
+      },
+      {
+        "id": 2,
+        "path": "/teachers",
+        "title": "Ustozlar"
+      },
+      {
+        "id": 3,
+        "path": "/students",
+        "title": "O'quvchilar"
+      },
+      {
+        "id": 4,
+        "path": "/market",
+        "title": "Do'kon"
+      },
+      {
+        "id": 5,
+        "path": "/groups",
+        "title": "Guruxlar"
+      }
+    ],
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Nurillo",
+        "surname": "Suyunboyev",
+        "age": 41,
+        "stack": "Frontend developer",
+        "stackId": "1",
+        "region": "Namangan",
+        "regionId": "3",
+        "district": "Norin",
+        "status": "Asosiy teacher",
+        "statusId": "2",
+        "experience": "2",
+        "gender": "male",
+        "email": "nurillosuyunboyev6@gmail.com",
+        "phone": "+998994683600",
+        "isMerried": false,
+        "study": "National University",
+        "workCompany": ["Apple", "Najot Ta'lim"],
+        "workCompanyId": [7, 9]
+      },
+      {
+        "id": "2",
+        "name": "Temurbek",
+        "surname": "Tolibov",
+        "age": 20,
+        "stack": "Frontend developer",
+        "stackId": "1",
+        "region": "Farg'ona",
+        "regionId": "2",
+        "district": "Qirguli",
+        "status": "Asosiy teacher",
+        "statusId": "2",
+        "experience": "2",
+        "gender": "male",
+        "email": "tolibovtemurbek05@gmail.com",
+        "phone": "+998973361266",
+        "isMerried": false,
+        "study": "International Islamic academy of Uzbekistan",
+        "workCompany": ["Apple", "Najot Ta'lim"],
+        "workCompanyId": [5,6]
+      }
+    ],
+    "status": [
+      {
+        "id": 1,
+        "name": "Yordamchi ustoz"
+      },
+      {
+        "id": 2,
+        "name": "Asosiy ustoz"
+      },
+      {
+        "id": 3,
+        "name": "Bosh ustoz"
+      },
+      {
+        "id": 4,
+        "name": "Boshqaruvchi ustoz"
+      }
+    ],
+    "regions": [
+      {
+        "id": "1",
+        "name": "Toshkent"
+      },
+      {
+        "id": "2",
+        "name": "Farg'ona"
+      },
+      {
+        "id": "3",
+        "name": "Namangan"
+      },
+      {
+        "id": "4",
+        "name": "Andijon"
+      },
+      {
+        "id": "5",
+        "name": "Sirdaryo"
+      },
+      {
+        "id": "6",
+        "name": "Jizzax"
+      },
+      {
+        "id": "7",
+        "name": "Samarqand"
+      },
+      {
+        "id": "8",
+        "name": "Qashqadaryo"
+      },
+      {
+        "id": "9",
+        "name": "Surxandaryo"
+      },
+      {
+        "id": "10",
+        "name": "Buxoro"
+      },
+      {
+        "id": "11",
+        "name": "Xorazm"
+      },
+      {
+        "id": "12",
+        "name": "Navoi"
+      }
+    ],
+    "stack": [
+      {
+        "id": "1",
+        "name": "FrontEnd"
+      },
+      {
+        "id": "2",
+        "name": "BackEnd"
+      },
+      {
+        "id": "3",
+        "name": "Full Stack"
+      },
+      {
+        "id": "4",
+        "name": "Graphic design"
+      },
+      {
+        "id": "5",
+        "name": "Flutter"
+      },
+      {
+        "id": "6",
+        "name": "Java"
+      },
+      {
+        "id": "5",
+        "name": "Foundation"
+      }
+    ],
+    "workList": [
+      {
+        "id": 1,
+        "name": "Google"
+      },
+      {
+        "id": 2,
+        "name": "Amazon"
+      },
+      {
+        "id": 3,
+        "name": "Facebook"
+      },
+      {
+        "id": 4,
+        "name": "EPAM"
+      },
+      {
+        "id": 5,
+        "name": "Apple"
+      },
+      {
+        "id": 6,
+        "name": "Najot Ta'lim"
+      }
     ]
-}
+  }
+  

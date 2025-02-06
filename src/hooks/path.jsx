@@ -1,3 +1,4 @@
+
 export const PATH = {
     home: "/",
     teachers:"/teachers",
