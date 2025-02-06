@@ -1,12 +1,12 @@
 import { Menu } from "antd"
-import { dashboardRouteList } from "../hooks/routes"
+import {  dashboardNavlist } from "../hooks/routes"
 import { Link } from "react-router-dom"
 import getToken from "../hooks/getToken"
 import React from "react"
 
 const Navbar = () => {
   const { hideMenu } = getToken()
-  const menuList = dashboardRouteList.map((item) => {
+  const menuList = dashboardNavlist.map((item) => {
     const data = {
       key: item.id,
       label: (
@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <Menu
-      className={`${hideMenu ? "" : "!w-[20%]"} h-[100vh] overflow-y-auto`}
+      className={`${hideMenu ? "" : "!w-[20%]"} h-[89vh] overflow-y-auto`}
       defaultSelectedKeys={["1"]}
       defaultOpenKeys={["sub1"]}
       mode="inline"

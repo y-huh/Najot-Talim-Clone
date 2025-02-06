@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { instance } from "../hooks/instance"
 
-const getRequest = (api) => {
-  const [data, setData] = useState([])
+const getRequest = (api,isObj) => {
+  const [data, setData] = useState(isObj ? [] : [])
 
   useEffect(() => {
     instance()

@@ -5,6 +5,8 @@ import { Button, Input } from 'antd'
 import CustomTable from '../../components/CustomTable'
 import FilterStack from '../../components/FilterStack'
 import { instance } from '../../hooks/instance'
+import { PATH } from '../../hooks/path'
+import { getTeachers } from '../../service/getTeachers'
 
 const Teacher = () => {
   const [stackId, setStackId] = useState(null)
@@ -13,26 +15,31 @@ const Teacher = () => {
   const [refresh, setRefresh] = useState(false)
 
   const columns = [
-    { title: 'ID', dataIndex: 'id' },
+    { title: 'ID', dataIndex: 'key' },
     { title: 'Ustos ismi', dataIndex: 'name' },
     { title: 'Ustos yoshi', dataIndex: 'age' },
     { title: "Yo'nalish", dataIndex: 'stack' },
     { title: 'Ustos lavozim', dataIndex: 'status' },
     { title: 'Ustos raqami', dataIndex: 'phone' },
-    { title: 'Malafati', dataIndex: 'action' }
+    { title: 'Batafsil', dataIndex: 'action' }
   ]
 
-  const handleSearchByName = (e) => {
+  function handleSearchByName(e) {
     setIsLoading(true)
-    const filteredName = teachers.filter(item => 
-      item.name.toLowerCase().includes(e.target.value.toLowerCase())
-    )
-    setTimeout(() => {
-      setIsLoading(false)
-      setTeachers(e.target.value ? filteredName : [])
-      if (!e.target.value) setRefresh(!refresh)
-    }, 1000)
+    const filterByName = teachers.filter(item => item.name.toLowerCase().includes(e.target.value.toLowerCase()))
+    if (e.target.value) {
+      setTimeout(() => {
+        setIsLoading(false)
+        setTeachers(filterByName)
+      }, 1000)
+    } else {
+      setTimeout(() => {
+        setIsLoading(false)
+        setRefresh(!refresh)
+      }, 1000)
+    }
   }
+  getTeachers(stackId, refresh, setTeachers, teachers)
 
   useEffect(() => {
     setIsLoading(true)
@@ -56,7 +63,7 @@ const Teacher = () => {
 
   return (
     <div className="p-4">
-      <Caption title="Ustoslar" icon={<UserAddOutlined />} count={5} />
+      <Caption addLink={PATH.teachersAdd} title="Ustoslar" icon={<UserAddOutlined />} count={5} />
       <div className="my-5 flex gap-10">
         <label className="flex flex-col">
           <span className="text-[15px] text-slate-400 pl-1 mb-1">Qidirish</span>
