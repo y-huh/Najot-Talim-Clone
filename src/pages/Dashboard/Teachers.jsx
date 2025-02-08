@@ -7,12 +7,15 @@ import FilterStack from '../../components/FilterStack'
 import { instance } from '../../hooks/instance'
 import { PATH } from '../../hooks/path'
 import { getTeachers } from '../../service/getTeachers'
+import { useNavigate } from 'react-router-dom'
 
 const Teacher = () => {
   const [stackId, setStackId] = useState(null)
   const [teachers, setTeachers] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const [refresh, setRefresh] = useState(false)
+  const navigate = useNavigate();
+
 
   const columns = [
     { title: 'ID', dataIndex: 'key' },
@@ -39,6 +42,9 @@ const Teacher = () => {
       }, 1000)
     }
   }
+  function handleMoreClick(teacherId) {
+    navigate(`/teachers/${teacherId}`); 
+  }
   getTeachers(stackId, refresh, setTeachers, teachers)
 
   useEffect(() => {
@@ -51,7 +57,12 @@ const Teacher = () => {
           name: item.name || <LineOutlined />,
           age: item.age || <LineOutlined />,
           stack: item.stack || <LineOutlined />,
-          action: <Button className="w-[17px] h-[17px]" size="middle" type="primary"><MoreOutlined className="rotate-90" /></Button>
+          action: <Button 
+          onClick={() => handleMoreClick(item.id)} 
+          className="w-[17px] h-[17px]" 
+          size="middle" 
+          type="primary"
+        ></Button>
         })))
         setIsLoading(false)
       })

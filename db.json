@@ -89,7 +89,6 @@
       ]
     },
     {
-      "id": "fd5b",
       "name": "Valijon",
       "surname": "Quvondiqov",
       "age": "17",
@@ -104,10 +103,11 @@
       "gender": null,
       "email": "kuvandikovvalizon@gmail.com",
       "phone": "+998977444182",
-      "isMerried": "Yoq",
+      "isMerried": "Ha",
       "study": "School 339",
       "workCompany": null,
-      "workCompanyId": null
+      "workCompanyId": null,
+      "id": "fd5b"
     }
   ],
   "status": [
