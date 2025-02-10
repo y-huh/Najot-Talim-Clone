@@ -1,6 +1,6 @@
 import React from 'react';
 import { PATH } from "./path";
-import { Groups, Home, Market, Students, Teachers ,TeachersCrud,TeachersMore} from "../pages/Dashboard";
+import { Group, Home, Market,Stack, Students, Teachers ,TeachersCrud,TeachersMore} from "../pages/Dashboard";
 import { CodeSandboxOutlined, HomeOutlined, ShoppingCartOutlined, UsergroupAddOutlined, UserOutlined } from '@ant-design/icons';
 
 export const dashboardNavlist = [
@@ -23,9 +23,9 @@ export const dashboardNavlist = [
     icon: <UsergroupAddOutlined /> 
   },
   { id: 4,
-    path: PATH.groups, 
-    element: <Groups />,
-    title: "Guruhlar",
+    path: PATH.stack, 
+    element: <Stack />,
+    title: "Yo`nalishlar",
     icon: <CodeSandboxOutlined /> 
   },
   { id: 5,
@@ -55,12 +55,12 @@ export const dashboardRouteList = [
   },
   {
     id:4,
-    path:PATH.groups,
-    element:<Groups/>
+    path:PATH.stack,
+    element:<Stack/>
   },
   {
     id:5,
-    path:PATH.home,
+    path:PATH.market,
     element:<Market/>
   },
   {
@@ -77,5 +77,10 @@ export const dashboardRouteList = [
     id:8,
     path:PATH.teachersEdit,
     element:<TeachersCrud/>
+  },
+  {
+    id:9,
+    path:PATH.group,
+    element:<Group/>
   },
 ];

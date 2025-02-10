@@ -58,11 +58,14 @@ const Teacher = () => {
           age: item.age || <LineOutlined />,
           stack: item.stack || <LineOutlined />,
           action: <Button 
+
           onClick={() => handleMoreClick(item.id)} 
           className="w-[17px] h-[17px]" 
           size="middle" 
           type="primary"
-        ></Button>
+        >
+          <MoreOutlined/>
+        </Button>
         })))
         setIsLoading(false)
       })

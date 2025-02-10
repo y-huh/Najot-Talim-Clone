@@ -3,7 +3,7 @@
     {
       "username": "Valijon",
       "password": "123",
-      "id": "a6be"
+      "id": "2c74"
     }
   ],
   "categories": [
@@ -25,7 +25,7 @@
     {
       "id": "4",
       "path": "/market",
-      "title": "Do'kon"
+      "title": "Dokon"
     },
     {
       "id": "5",
@@ -35,97 +35,166 @@
   ],
   "teachers": [
     {
-      "id": "1",
       "name": "Nurillo",
       "surname": "Suyunboyev",
       "age": 41,
-      "stack": "Frontend developer",
       "stackId": "1",
+      "stack": "Frontend developer",
       "region": "Namangan",
       "regionId": "3",
       "district": "Norin",
       "status": "Asosiy teacher",
       "statusId": "2",
-      "experience": "2",
-      "gender": "male",
+      "experience": "2 yil",
+      "gender": "Erkak",
       "email": "nurillosuyunboyev6@gmail.com",
       "phone": "+998994683600",
-      "isMerried": false,
-      "study": "National University",
+      "isMerried": "Bo'ydoq",
+      "study": "National Universiy",
       "workCompany": [
-        "Apple",
-        "Najot Ta'lim"
+        "TikTok",
+        "Facebook",
+        "Google"
       ],
       "workCompanyId": [
-        7,
-        9
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Temurbek",
-      "surname": "Tolibov",
-      "age": 20,
-      "stack": "Frontend developer",
-      "stackId": "1",
-      "region": "Farg'ona",
-      "regionId": "2",
-      "district": "Qirguli",
-      "status": "Asosiy teacher",
-      "statusId": "2",
-      "experience": "2",
-      "gender": "male",
-      "email": "tolibovtemurbek05@gmail.com",
-      "phone": "+998973361266",
-      "isMerried": false,
-      "study": "International Islamic academy of Uzbekistan",
-      "workCompany": [
-        "Apple",
-        "Najot Ta'lim"
+        "3",
+        "2",
+        "1"
       ],
-      "workCompanyId": [
-        5,
-        6
-      ]
+      "id": "1"
     },
     {
       "name": "Valijon",
       "surname": "Quvondiqov",
       "age": "17",
-      "stackId": null,
-      "stack": null,
+      "stackId": "2",
+      "stack": "Backend",
+      "region": "Jizzax",
+      "regionId": "6",
+      "district": "Kosmanavtlar",
+      "status": "Bosh ustoz",
+      "statusId": "3",
+      "experience": "1",
+      "gender": "Erkak",
+      "email": "valijon@gmail.com",
+      "phone": "+998991231212",
+      "isMerried": "Yoq ",
+      "study": "TATU",
+      "workCompany": [
+        "Microsoft",
+        "Tesla",
+        "OpenAI"
+      ],
+      "workCompanyId": [
+        "8",
+        "6",
+        "4"
+      ],
+      "id": "bc99"
+    },
+    {
+      "id": "f2b9",
+      "name": "Hondamir",
+      "surname": "Usmonov",
+      "age": "21",
+      "stackId": "2",
+      "stack": "Backend",
       "region": "Toshkent",
       "regionId": "1",
-      "district": "Yashnobod",
+      "district": "Olmazor tumani",
       "status": "Asosiy ustoz",
       "statusId": "2",
-      "experience": "1",
-      "gender": null,
-      "email": "kuvandikovvalizon@gmail.com",
-      "phone": "+998977444182",
-      "isMerried": "Ha",
-      "study": "School 339",
-      "workCompany": null,
-      "workCompanyId": null,
-      "id": "fd5b"
+      "experience": "2 yil",
+      "gender": "Erkak",
+      "email": "hondamir@gmail.com",
+      "phone": "+998904445566",
+      "isMerried": "Yo'q",
+      "study": "MDIS",
+      "workCompany": [
+        "OpenAI",
+        "TikTok",
+        "Facebook"
+      ],
+      "workCompanyId": [
+        "4",
+        "3",
+        "2"
+      ]
     }
   ],
-  "status": [
+  "stack": [
     {
       "id": "1",
-      "name": "Yordamchi ustoz"
+      "name": "Frontend",
+      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg"
     },
     {
       "id": "2",
-      "name": "Asosiy ustoz"
+      "name": "Backend",
+      "image": "https://media.gettyimages.com/id/1422276740/vector/software-developer-flat-design.jpg?s=612x612&w=gi&k=20&c=nAeiHldWvLHV-S4CRv5BsRtwH2PlS7t7Dynol9npglE="
     },
     {
       "id": "3",
-      "name": "Bosh ustoz"
+      "name": "Full Stack",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
     },
     {
       "id": "4",
-      "name": "Boshqaruvchi ustoz"
+      "name": "Graphic design",
+      "image": "https://inspiria.edu.in/wp-content/uploads/Career-in.-graphic-designers.webp"
+    },
+    {
+      "id": "5",
+      "name": "Flutter",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzpEkv-vlwrVppb-PQuWArI1sXR9vAYAwNg&s"
+    },
+    {
+      "id": "6",
+      "name": "Java",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyYYAhEoXWOcyx0sjHiaK2TrmUNxxMJdE6g&s"
+    },
+    {
+      "id": "7",
+      "name": "Foundation",
+      "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "stackId": "1",
+      "name": "React JS N77",
+      "createdAt": "03.08.2024",
+      "studentCount": "8",
+      "status": true,
+      "mainTeacher": "Nurillo Suyunboyev",
+      "teacherId": "1",
+      "supportTeacher": "Isroil Omonjonov",
+      "room": "Facebook"
+    },
+    {
+      "id": "2",
+      "stackId": "2",
+      "name": "Backend NodeJS N76",
+      "createdAt": "03.08.2024",
+      "studentCount": "18",
+      "status": false,
+      "mainTeacher": "Valijon Quvondiqov",
+      "teacherId": "bc99",
+      "supportTeacher": "Isroil Omonjonov",
+      "room": "Tesla"
+    },
+    {
+      "id": "3",
+      "stackId": "2",
+      "name": "Backend Java N2",
+      "createdAt": "01.02.2024",
+      "studentCount": "20",
+      "status": true,
+      "mainTeacher": "Hondamir Usmonov",
+      "teacherId": "f2b9",
+      "supportTeacher": "Ibrohimjon Sadriddinov",
+      "room": "Instagram"
     }
   ],
   "regions": [
@@ -135,7 +204,7 @@
     },
     {
       "id": "2",
-      "name": "Farg'ona"
+      "name": "Fargona"
     },
     {
       "id": "3",
@@ -178,34 +247,22 @@
       "name": "Navoi"
     }
   ],
-  "stack": [
+  "status": [
     {
       "id": "1",
-      "name": "FrontEnd"
+      "name": "Yordamchi ustoz"
     },
     {
       "id": "2",
-      "name": "BackEnd"
+      "name": "Asosiy ustoz"
     },
     {
       "id": "3",
-      "name": "Full Stack"
+      "name": "Bosh ustoz"
     },
     {
       "id": "4",
-      "name": "Graphic design"
-    },
-    {
-      "id": "5",
-      "name": "Flutter"
-    },
-    {
-      "id": "6",
-      "name": "Java"
-    },
-    {
-      "id": "5",
-      "name": "Foundation"
+      "name": "Boshqaruvchi ustoz"
     }
   ],
   "workList": [
@@ -215,23 +272,39 @@
     },
     {
       "id": "2",
-      "name": "Amazon"
-    },
-    {
-      "id": "3",
       "name": "Facebook"
     },
     {
+      "id": "3",
+      "name": "TikTok"
+    },
+    {
       "id": "4",
-      "name": "EPAM"
+      "name": "OpenAI"
     },
     {
       "id": "5",
-      "name": "Apple"
+      "name": "Telegram"
     },
     {
       "id": "6",
+      "name": "Tesla"
+    },
+    {
+      "id": "7",
+      "name": "Apple"
+    },
+    {
+      "id": "8",
+      "name": "Microsoft"
+    },
+    {
+      "id": "9",
       "name": "Najot Ta'lim"
+    },
+    {
+      "id": "10",
+      "name": "Kahoot"
     }
   ]
 }

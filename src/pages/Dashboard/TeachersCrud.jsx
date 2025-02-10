@@ -8,11 +8,8 @@ import { Toaster } from 'react-hot-toast'
 import getRequest from '../../service/getRequest'
 
 const TeachersCrud = () => {
-  // Update part start
   const {id} = useParams()
   const singleData = id && getRequest(`/teachers/${id}`, true)
-  // Update part end
-
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
@@ -39,7 +36,7 @@ const TeachersCrud = () => {
   function handleAddTeachaer(e) {
     e.preventDefault()
     setIsLoading(true)
-    const data = { name, surname, age, stackId, stack, region, regionId, district, status, statusId, experience, gender, email, phone, isMerried, study, workCompany, workCompanyId }
+    const data = { name, surname, age,stack, stackId, region, regionId, district, status, statusId, experience, gender, email, phone, isMerried, study, workCompany, workCompanyId }
     if(id){
       data.id = id
       Edit(data, `/teachers/${id}`, setIsLoading, navigate)
