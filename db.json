@@ -120,13 +120,42 @@
         "3",
         "2"
       ]
+    },
+    {
+      "id": "1f91",
+      "name": "Muhammadrizo",
+      "surname": "Mirvohidov",
+      "age": "18",
+      "stackId": "3",
+      "stack": "Full Stack",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Olmazor tumani",
+      "status": "Asosiy ustoz",
+      "statusId": "2",
+      "experience": "1 yil tajriba bor",
+      "gender": "Erkak",
+      "email": "muhammadrizo@gmail.com",
+      "phone": "+998993669555",
+      "isMerried": "Yoq hali",
+      "study": "TOSHMI",
+      "workCompany": [
+        "TikTok",
+        "Facebook",
+        "Najot Ta'lim"
+      ],
+      "workCompanyId": [
+        "3",
+        "2",
+        "9"
+      ]
     }
   ],
   "stack": [
     {
-      "id": "1",
       "name": "Frontend",
-      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfqrCn4NqkXbB6tD-eCocbmh-AyGebSsy0A&s",
+      "id": "1"
     },
     {
       "id": "2",
@@ -157,6 +186,11 @@
       "id": "7",
       "name": "Foundation",
       "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
+    },
+    {
+      "id": "5e1e",
+      "name": "SMM",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lflQCp8Q43iOIItqydTQw1u0L5BGUllOQg&s"
     }
   ],
   "groups": [
@@ -165,36 +199,36 @@
       "stackId": "1",
       "name": "React JS N77",
       "createdAt": "03.08.2024",
-      "studentCount": "8",
       "status": true,
       "mainTeacher": "Nurillo Suyunboyev",
       "teacherId": "1",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Facebook"
+      "room": "Facebook",
+      "roomId": "1"
     },
     {
       "id": "2",
       "stackId": "2",
-      "name": "Backend NodeJS N76",
-      "createdAt": "03.08.2024",
-      "studentCount": "18",
-      "status": false,
+      "name": "Backend NodeJS N72",
+      "room": "Instagram",
+      "roomId": "3",
       "mainTeacher": "Valijon Quvondiqov",
       "teacherId": "bc99",
+      "createdAt": "03.08.2024",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Tesla"
+      "status": true
     },
     {
-      "id": "3",
-      "stackId": "2",
-      "name": "Backend Java N2",
-      "createdAt": "01.02.2024",
-      "studentCount": "20",
-      "status": true,
-      "mainTeacher": "Hondamir Usmonov",
-      "teacherId": "f2b9",
-      "supportTeacher": "Ibrohimjon Sadriddinov",
-      "room": "Instagram"
+      "id": "9b2c",
+      "stackId": "3",
+      "name": "Full Stack N01",
+      "room": "Facebook",
+      "roomId": "1",
+      "mainTeacher": "Muhammadrizo",
+      "teacherId": "1f91",
+      "createdAt": "2025-02-28",
+      "supportTeacher": "Nurillo Suyunboyev",
+      "status": true
     }
   ],
   "regions": [
@@ -305,6 +339,60 @@
     {
       "id": "10",
       "name": "Kahoot"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "studentId": "18295",
+      "name": "Eldor",
+      "groupId": "1",
+      "group":"React JS N77",
+      "stackId": "1",
+      "surname": "Xudoyberganov",
+      "age": "16",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Olmazor tumani",
+      "study": "333-maktab",
+      "status": true,
+      "phone": "+998909718295",
+      "email": "eldor@gmail.com"
+    },
+    {
+      "id": "2",
+      "studentId": "27771",
+      "name": "Temur",
+      "surname": "Tolibov",
+      "groupId": "2",
+      "group":"Backend NodeJS N72",
+      "stackId": "2",
+      "age": "20",
+      "region": "Fargona",
+      "regionId": "2",
+      "district": "Fargona shahar",
+      "study": "Islamic academic",
+      "status": true,
+      "phone": "+998973361266",
+      "email": "temur@gmail.com"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Facebook"
+    },
+    {
+      "id": "2",
+      "name": "Tesla"
+    },
+    {
+      "id": "3",
+      "name": "Instagram"
+    },
+    {
+      "id": "4",
+      "name": "Osmondagi bolalar"
     }
   ]
 }

@@ -1,9 +1,10 @@
-import  { useContext } from 'react'
-import { Context } from '../context/context'
+import { useContext } from 'react'
+import {Context} from "../context/context"
 
 const getToken = () => {
-    const {token,hideMenu,setHideMenu,setToken} = useContext(Context)
-  return {token,hideMenu,setHideMenu,setToken}
+    const {token, setToken, hideMenu, setHideMenu} = useContext(Context)
+
+    return {token, setToken, hideMenu, setHideMenu}
 }
 
-export default getToken 
+export default getToken

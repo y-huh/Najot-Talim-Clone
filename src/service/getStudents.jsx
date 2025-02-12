@@ -6,23 +6,23 @@ import { Button } from "antd"
 import { Link, useNavigate } from 'react-router-dom'
 
 
-export const getTeachers = (stackId, refresh, setTeachers) => {
+export const getStudents = (groupId, refresh, setStudents) => {
   const navigate = useNavigate()
 
     useEffect(() => {
-        instance().get(`/teachers`, {
-          params:{stackId}
+        instance().get(`/students`, {
+          params:{groupId}
         }).then(res => {
-          setTeachers(res.data.map((item, index) => {
+            setStudents(res.data.map((item, index) => {
             item.key = index + 1
             item.phone = <Link className='!text-[#000] hover:!text-blue-500' to={`tel:${item.phone}`}>{item.phone}</Link>
             item.name = item.name ? item.name : <LineOutlined />
             item.age = item.age ? item.age : <LineOutlined />
-            item.stack = item.stack ? item.stack : <LineOutlined />
+            item.status = item.status ? "Faol" : "Faol emas"
             item.action = <Button onClick={() => navigate(`${item.id}`)} className='!w-[32px] !h-[32px]' size='middle' type='primary'><MoreOutlined className='rotate-90' /></Button>
     
             return item
           }))
         })
-    }, [refresh, stackId])
+    }, [refresh, groupId])
 }
